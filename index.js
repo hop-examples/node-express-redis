@@ -1,5 +1,6 @@
 const express = require("express");
 const IORedis = require("ioredis");
+const hostname = require("os").hostname();
 
 const app = express();
 const port = 3000;
@@ -11,7 +12,7 @@ const redis = new IORedis({
 
 app.get("/", async (req, res) => {
 	const count = await redis.incr("count");
-	res.send(`This page has been visited ${count} times!`);
+	res.send(`${hostname}: Page has ${count} visits!`);
 });
 
 app.listen(port, () => {
