@@ -1,12 +1,13 @@
 {
-  "name": "node-express-redis",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:hop-examples/node-express-redis.git",
-  "author": "Alistair Smith <hi@alistair.sh>",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2",
-    "ioredis": "^5.2.5"
-  }
+	"name": "node-express-redis",
+	"version": "1.0.0",
+	"main": "./index.js",
+	"type": "module",
+	"repository": "git@github.com:hop-examples/node-express-redis.git",
+	"author": "Alistair Smith <hi@alistair.sh>",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.18.2",
+		"ioredis": "^5.2.5"
+	}
 }

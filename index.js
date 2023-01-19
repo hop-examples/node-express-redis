@@ -1,7 +1,8 @@
-const express = require("express");
-const IORedis = require("ioredis");
-const hostname = require("os").hostname();
+import express from "express";
+import IORedis from "ioredis";
+import os from "node:os";
 
+const hostname = os.hostname();
 const app = express();
 const port = 3000;
 
