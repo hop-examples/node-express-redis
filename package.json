@@ -6,6 +6,9 @@
 	"repository": "git@github.com:hop-examples/node-express-redis.git",
 	"author": "Alistair Smith <hi@alistair.sh>",
 	"license": "MIT",
+	"engines": {
+		"node": ">=18.0.0"
+	},
 	"dependencies": {
 		"express": "^4.18.2",
 		"ioredis": "^5.2.5"
